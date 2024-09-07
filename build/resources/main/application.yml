@@ -1,0 +1,11 @@
+ spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/SAFEDOG
+    username: root
+    password: 0007
+  jpa:
+    properties:
+      hibernate:
+    show-sql: true
+    hibernate: 
+      ddl-auto: update
