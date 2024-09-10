@@ -77,7 +77,7 @@ document.getElementById("ingresar-submit").addEventListener("click", function (e
 
 // Function to fetch user data
 function getInfoDuenio(username, password) {
-  const urlDuenio = `http://localhost:8081/api/safedog/duenios/duenio/correo?correo=${username}`;
+  const urlDuenio = `http://3.133.102.220:8081/api/safedog/duenios/duenio/correo?correo=${username}`;
 
   console.log('Fetching data from URL:', urlDuenio); // Log the URL being used
 

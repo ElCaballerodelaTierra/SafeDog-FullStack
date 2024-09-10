@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, false);
 });
 
-const url = `http://127.0.0.1:8081/api/safedog/duenios`;
+const url = `http://3.133.102.220:8081/api/safedog/duenios`;
 
 //Enviar por API (metodo POST)
 async function sendRegistroNuevoUsuerio() {
@@ -244,7 +244,7 @@ async function sendRegistroNuevoUsuerio() {
     }
 }
 
-const urlPerrito = `http://127.0.0.1:8081/api/safedog/perritos`;
+const urlPerrito = `http://3.133.102.220:8081/api/safedog/perritos`;
 
 //Enviar por API (metodo POST)
 async function crearNuevoPerrito() {
@@ -265,7 +265,7 @@ async function crearNuevoPerrito() {
     }
 }
 
-const urlContactoEDVacio = `http://127.0.0.1:8081/api/safedog/Contacto_Emergencia`;
+const urlContactoEDVacio = `http://3.133.102.220:8081/api/safedog/Contacto_Emergencia`;
 
 //Enviar por API (metodo POST)
 async function crearNuevoContactoEDVacio() {
@@ -288,7 +288,7 @@ async function crearNuevoContactoEDVacio() {
 
 async function fetchLastIdPerrito() {
     try {
-        const response = await fetch('http://localhost:8081/api/safedog/perritos/lastId'); // Adjust URL as needed
+        const response = await fetch('http://3.133.102.220:8081/api/safedog/perritos/lastId'); // Adjust URL as needed
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -301,7 +301,7 @@ async function fetchLastIdPerrito() {
 
 async function fetchLastIdContactE() {
     try {
-        const response = await fetch('http://localhost:8081/api/safedog/Contacto_Emergencia/lastId'); // Adjust URL as needed
+        const response = await fetch('http://3.133.102.220:8081/api/safedog/Contacto_Emergencia/lastId'); // Adjust URL as needed
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

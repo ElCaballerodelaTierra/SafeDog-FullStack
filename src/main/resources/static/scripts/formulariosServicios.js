@@ -90,7 +90,7 @@
 
 
 let jsonData;
-const url = `http://localhost:8080/api/safedog/servicios`;
+const url = `http://3.133.102.220:8081/api/safedog/servicios`;
 
 //Enviar por API (metodo POST)
 function sendServicios() {
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.setItem('serviciosForm', jsonData);
 
     // Enviar por API
-    fetch('http://localhost:8081/api/safedog/servicios', {
+    fetch('http://3.133.102.220:8081/api/safedog/servicios', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchLastIdDuenio() {
   try {
-    const response = await fetch('http://localhost:8081/api/safedog/duenios/lastId'); // Adjust URL as needed
+    const response = await fetch('http://3.133.102.220:8081/api/safedog/duenios/lastId'); // Adjust URL as needed
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -172,7 +172,7 @@ async function fetchLastIdDuenio() {
 function sendInfoDuenio(jsonDataDuenio) {
   // Inicializa idDuenio después de establecerlo en el localStorage
 let idDuenio = localStorage.getItem('idDuenio');
-urlDuenio = `http://localhost:8081/api/safedog/duenios/duenio/${idDuenio}`;
+urlDuenio = `http://3.133.102.220:8081/api/safedog/duenios/duenio/${idDuenio}`;
   fetch(urlDuenio, {
     method: 'PUT',
     headers: {
@@ -195,7 +195,7 @@ urlDuenio = `http://localhost:8081/api/safedog/duenios/duenio/${idDuenio}`;
 //Enviar por API (metodo PUT)
 function sendInfoPerrito(jsonDataPerrito) {
 let  idPerrito = localStorage.getItem('idPerrito');
- urlPerrito = `http://localhost:8081/api/safedog/perritos/perrito/${idPerrito}`
+ urlPerrito = `http://3.133.102.220:8081/api/safedog/perritos/perrito/${idPerrito}`
   fetch(urlPerrito, {
     method: 'PUT',
     headers: {
@@ -219,7 +219,7 @@ let  idPerrito = localStorage.getItem('idPerrito');
 //Enviar por API (metodo PUT)
 function sendInfoContactoE(jsonDataContactoE) {
 let idContactoE = localStorage.getItem('idContactoEmergencia');
- urlContactoEmergencia = `http://localhost:8081/api/safedog/Contacto_Emergencia/contactoE/${idContactoE}`
+ urlContactoEmergencia = `http://3.133.102.220:8081/api/safedog/Contacto_Emergencia/contactoE/${idContactoE}`
   fetch(urlContactoEmergencia, {
     method: 'PUT',
     headers: {
